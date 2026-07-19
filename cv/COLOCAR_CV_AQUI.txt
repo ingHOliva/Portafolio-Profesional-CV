@@ -1,0 +1,4 @@
+Sube aquí tu CV en PDF con el nombre exacto: Hector_Oliva_CV.pdf
+(o cambia el nombre referenciado en index.html si prefieres otro).
+
+Una vez subido, puedes borrar este archivo de texto.
