@@ -1,0 +1,10 @@
+Carpeta para documentos de evidencia en PDF que quieras referenciar
+directamente desde el texto de alguna página (por ejemplo, un enlace
+puntual dentro de un párrafo en pages/sennova2024.html).
+
+Ejemplo de nombre: evidencia2024.pdf
+
+Esta carpeta no genera botones ni secciones de descarga automáticamente:
+el contenido de cada pestaña en pages/ ya funciona como la evidencia
+del proyecto. Úsala solo si decides enlazar un documento puntual desde
+el texto.
