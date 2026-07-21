@@ -700,3 +700,49 @@ main {
   height: auto;
   display: block;
 }
+
+/* ================= HERO DOS COLUMNAS ================= */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* 1 sola columna en dispositivos móviles por defecto */
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* En pantallas medianas y grandes se convierte en 2 columnas */
+/* 1. Ajustes en la cuadrícula principal */
+@media (min-width: 850px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1.05fr; /* Le damos más peso/ancho a la columna de la imagen (50/50) */
+    gap: 3.5rem;
+    align-items: start; /* Alinea la imagen al inicio (arriba, a la par del título) */
+  }
+}
+
+.hero-media {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Alinea arriba */
+  width: 100%;
+}
+
+/* 2. Ampliamos el contenedor de la imagen */
+.hero-image-wrapper {
+  width: 100%;
+  max-width: 720px; /* Aumentamos el límite máximo para que gane más presencia */
+  margin: 0; /* Eliminamos el margin auto para alinearlo bien */
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* 3. Permitimos que la imagen sea fluida y llene su contenedor */
+.hero-img {
+  width: 100%;
+  height: 700%; /* Mantiene la proporción natural sin deformar ni dejar bordes vacíos */
+  display: block;
+  object-fit: cover; /* Cambiamos de contain a cover para llenar completamente */
+}
