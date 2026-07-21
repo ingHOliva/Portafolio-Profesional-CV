@@ -1,0 +1,162 @@
+<article class="project">
+  <p class="eyebrow"><span class="dot"></span>PROYECTO INVESTIGACIÓN MAESTRÍA</p>
+  <h2>Diseño, fabricación y caracterización de un sistema microcapsular basado en microfluidos</h2>
+  <div class="meta-row">
+    <span>Universidad de los Andes · Bogotá, Colombia</span>
+    <span class="sep">·</span>
+    <span>Julio 2014 – Junio 2018</span>
+    <span class="status-badge">Tesis de Maestría Finalizada</span>
+  </div>
+
+  <p class="project-lead">
+    Desarrollo de una plataforma tecnológica microfluídica pasiva e integrada para la síntesis controlada,
+    encapsulamiento y caracterización de microcápsulas de alginato de calcio con alta monodispersidad.
+  </p>
+
+  <p class="project-lead">
+    <b>Resumen:</b> Los sistemas microcapsulares permiten la protección, transporte y liberación controlada de
+    compuestos bioactivos en áreas como la farmacéutica, la agricultura y la biotecnología. En esta investigación se
+    diseñó, construyó y caracterizó una plataforma experimental integrada para la producción automatizada de
+    microcápsulas de alginato de calcio mediante microfluídica pasiva en régimen de enfocamiento de flujo
+    (<i>flow-focusing</i>). El sistema incluyó la fabricación de dispositivos microfluídicos en PMMA mediante mecanizado
+    CNC Láser, el desarrollo de bombas de jeringa caseras de bajo costo, la implementación de un algoritmo de
+    procesamiento de
+    imágenes para la caracterización volumétrica de gotas en tiempo real y el análisis empírico de las dinámicas de
+    flujo. Se lograron coeficientes de variación (CV) inferiores al 10%, garantizando una elevada monodispersidad en
+    regímenes controlados como <i>Tip-Streaming</i>.<br><br>
+
+    <b>Palabras clave:</b> Microfluídica, Alginato de calcio, Monodispersidad, Flow-focusing, Procesamiento de imágenes,
+    Tip-Streaming, Polimetilmetacrilato (PMMA). <br><br>
+
+    <b>Objetivo General:</b>
+    Diseñar, fabricar y caracterizar un sistema microfluídico para la generación y caracterización controlada de
+    microcápsulas monodispersas de alginato de calcio.
+  </p>
+
+  <div class="project-main">
+    <h3>Procedimiento Experimental</h3>
+    <ul>
+      <li><b>Diseño y simulación de microcanales:</b> Modelado de geometrías de enfocamiento de flujo
+        (<i>flow-focusing</i>) y cálculo de resistencias hidráulicas basadas en la ecuación de Hagen-Poiseuille y la
+        aproximación de Stokes para flujos laminares (Re &lt;&lt; 1).</li>
+      <li><b>Microfabricación en PMMA:</b> Fabricación de dispositivos microfluídicos (`uFsys`) en láminas de
+        polimetilmetacrilato utilizando un micro-mecanizado de precisión (CNC) y sellado por unión solvente/térmica con
+        tratamiento superficial para controlar la hidrofobicidad/hidrofilicidad de las paredes.</li>
+      <li><b>Desarrollo de instrumentación y bombas de jeringa (`uFmec`):</b> Diseño y construcción de bombas de
+        infusión continuas controladas por motores a pasos y firmware personalizado para mantener flujos volumétricos
+        estables y libres de pulsaciones.</li>
+      <li><b>Sistema de visión y procesamiento de imágenes en tiempo real (`uFcam`):</b> Implementación de una rutina en
+        MATLAB basada en la Transformada de Hough y segmentación adaptativa para la detección de contornos, cálculo del
+        diámetro equivalente y evaluación del coeficiente de variación (CV) de las gotas generadas.</li>
+      <li><b>Caracterización empírica y generación microcapsular:</b> Evaluación de las fases líquidas (alginato de
+        sodio como fase dispersa y aceite de maíz con surfactante como fase continua) para la formación y posterior
+        reticulación iónica de microcápsulas en baño de cloruro de calcio ($\text{CaCl}_2$).</li>
+    </ul>
+  </div>
+
+  <!-- ================= SECCIÓN DE IMÁGENES / GALERÍA ================= -->
+  <div class="project-gallery single-column">
+    <figure class="gallery-item">
+      <img src="media/maestria/dis_1_estrategia.png" alt="Diagrama en bloques del desarrollo experimental"
+        loading="lazy">
+      <figcaption>Diagrama en bloques del desarrollo experimental.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/maestria/dis_2_diagrama_experimental.png" alt="Diseño y propuesta experimental" loading="lazy">
+      <figcaption>Diseño y propuesta experimental.</figcaption>
+    </figure>
+  </div>
+
+  <div class="project-gallery">
+    <figure class="gallery-item">
+      <img src="media/maestria/dis_4_geometria.png" alt="Diseño de geometrias y descripción del dispositivo"
+        loading="lazy">
+      <figcaption>Diseño de geometrias y descripción del dispositivo.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/maestria/dis_3_modelamiento.png"
+        alt="Modelamiento a partir de restricciones con el Teorema de Stokes" loading="lazy">
+      <figcaption>Modelamiento a partir de restricciones con el Teorema de Stokes.</figcaption>
+    </figure>
+  </div>
+  <!-- =================================================================== -->
+
+  <div class="project-main">
+    <h3>Resultados</h3>
+    <ul>
+      <li><b>Generación de gotas monodispersas (CV &lt; 10%):</b> Se establecieron las relaciones de caudal óptimas
+        ($Q_c/Q_d$) entre la fase continua y la dispersa para operar en el régimen de <i>Tip-Streaming</i>, obteniendo
+        microesferas de tamaño altamente uniforme.</li>
+      <li><b>Optimización de la mojadibilidad del microcanal:</b> Se resolvió el problema de adhesión/humectabilidad
+        (<i>wetting</i>) mediante la modificación química superficial de los canales en el prototipo `uFsys-3A`,
+        estabilizando la frecuencia de desprendimiento de las gotas.</li>
+      <li><b>Caracterización automatizada por visión artificial:</b> Validación del software `uFcam`, permitiendo la
+        medición continua del diámetro de las microgotas a altas velocidades de captura sin necesidad de muestreo manual
+        destructivo.</li>
+    </ul>
+  </div>
+
+  <!-- ================= SECCIÓN DE IMÁGENES / GALERÍA ================= -->
+  <div class="project-gallery">
+    <figure class="gallery-item">
+      <img src="media/maestria/res_1_evaluacion_sistemas.png" alt="Evaluación de varios dispositivos microfluidicos"
+        loading="lazy">
+      <figcaption>Evaluación de varios dispositivos microfluidicos.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/maestria/res_2_efectos_geometria.png" alt="Efecto " Humedad" corregido por la variación en la
+        geometria" loading="lazy">
+      <figcaption>Efecto "Humedad" corregido por la variación en la geometria.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/maestria/res_3_modos_generacion.png" alt="Modos de generación capsular" loading="lazy">
+      <figcaption>Modos de generación capsular.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/maestria/res_4_deteccion.png" alt="Procedimiento para la aplicación de la Transformada de Hough" loading="lazy">
+      <figcaption>Procedimiento para la aplicación de la Transformada de Hough.</figcaption>
+    </figure>
+  </div>
+
+  <div class="project-gallery single-column">
+    <figure class="gallery-item">
+      <img src="media/maestria/res_5_aplicacion_tecnica.png" alt="Aplicación de la Transformada de Hough" loading="lazy">
+      <figcaption>Aplicación de la Transformada de Hough.</figcaption>
+    </figure>
+  </div>
+  <!-- =================================================================== -->
+
+  <div class="project-grid">
+    <div class="project-main">
+      <h3>Mi rol</h3>
+      <ul>
+        <li>Desarrollé la totalidad de la investigación como estudiante de Maestría en Ingeniería Electrónica y de
+          Computadores bajo la asesoría del Dr. Johann F. Osma.</li>
+        <li>Diseñé y simulé la arquitectura de microcanales basándome en modelos analíticos de dinámica de fluidos a
+          microescala.</li>
+        <li>Ejecuté la fabricación física de los chips microfluídicos en PMMA mediante micro-mecanizado CNC y optimicé
+          los procesos de sellado y acondicionamiento químico de superficies.</li>
+        <li>Diseñé e implementé la electrónica de control y mecánica de las bombas de infusión (`uFmec`).</li>
+        <li>Programé el software de visión artificial `uFcam` en MATLAB para el procesamiento numérico y estadístico del
+          tamaño de gota en tiempo real.</li>
+        <li>Realicé los experimentos de laboratorio, la recolección de datos y el análisis de variabilidad para la
+          redacción del documento de tesis y posterior artículo científico.</li>
+      </ul>
+    </div>
+
+    <aside class="project-aside">
+      <h3>Tecnologías</h3>
+      <ul class="tag-list">
+        <li><span class="dot"></span>Diseño y Software: MATLAB (Image Processing Toolbox) / CAD/CAM (CNC Router) / C++ /
+          Python</li>
+        <li><span class="dot"></span>Microfluídica y Materiales: PMMA (Polimetilmetacrilato) / Alginato de Sodio /
+          Cloruro de Calcio ($\text{CaCl}_2$) / Aceite de Maíz / Surfactantes</li>
+        <li><span class="dot"></span>Hardware e Instrumentación: Bombas de infusión de precisión (`uFmec`) / Cámara de
+          alta velocidad / Sistemas de micro-mecanizado / Tratamientos de superficie</li>
+        <li><span class="dot"></span>Modelado y Teoría: Dinámica de fluidos / Ecuación de Stokes / Hagen-Poiseuille /
+          Coeficiente de Variación (CV) / Transformada de Hough</li>
+      </ul>
+    </aside>
+
+  </div>
+</article>

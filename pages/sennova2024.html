@@ -1,0 +1,134 @@
+<article class="project">
+  <p class="eyebrow"><span class="dot"></span>PROYECTO SGPS-12116-2024</p>
+  <h2>Sistema automático para el monitoreo de calidad del agua en fuentes hídricas para acueductos</h2>
+  <div class="meta-row">
+    <span>SENA Centro Lope · Pasto, Nariño</span>
+    <span class="sep">·</span>
+    <span>Abril – Diciembre 2024</span>
+    <span class="status-badge">Prototipo instalado en campo</span>
+  </div>
+
+  <p class="project-lead">
+    Diseño e implementación de un sistema IoT para el monitoreo remoto y en tiempo real
+    de variables fisicoquímicas del agua (color, turbiedad y temperatura), orientado a
+    fortalecer la gestión del recurso hídrico en la planta de tratamiento del Centro Lope.
+  </p>
+
+  <p class="project-lead">
+    <b>Resumen:</b>El agua, recurso hídrico finito y vital, es empleado en distintas actividades
+    productivas, resalta la necesidad e importancia de monitorear constantemente la calidad del
+    agua ante la constante contaminacion por actividades antropogenicas. Por tanto, empleando tecnicas
+    opticas e internet de las cosas, se desarrolló un sistema IoT autónomo para la medición en sitio – que
+    no requiere intervención humana, logrando el registro en tiempo real y el historial de los cambios de color,
+    turbiedad y temperatura en los distintos puntos de monitoreo en el Centro Lope. <br><br>
+
+    <b>Palabras clave:</b> Calidad del agua, Gestión hídrica, Internet de las Cosas (IoT), Monitoreo en tiempo real,
+    Sensores ópticos, Impresión 3D. <br><br>
+
+    <b>Objetivo General:</b>
+    Desarrollar un Sistema IoT Automático de Sensado Remoto para el Monitoreo de la Calidad
+    del Agua en Fuentes Hídricas que Abastecen Plantas de Tratamiento.
+  </p>
+
+  <div class="project-main">
+    <h3>Procedimiento Experimental</h3>
+    <ul>
+      <li><b>Diseño y arquitectura del módulo óptico:</b> Se diseñó una cámara de medición hermética a medida para
+        muestras de 20 mL, integrando una fuente de luz LED y un sensor de color espectral ajustado geométricamente para
+        lecturas por transmitancia/absorbancia sin interferencia de luz ambiental.</li>
+      <li><b>Integración del subsistema de control y potencia:</b> Se implementó un microcontrolador (ESP32) encargante
+        de la adquisición de datos multivariable (color por I2C, temperatura del agua) y del control programado de
+        actuadores (bombas periféricas para el ciclo automático de llenado, recirculación y vaciado de muestras).</li>
+      <li><b>Infraestructura de datos y comunicación IoT:</b> Se configuró el canal de comunicación inalámbrica
+        (WiFi/GSM/NB-IoT) para la transmisión continua de lecturas hacia una plataforma en la nube, habilitando
+        almacenamiento en base de datos y despliegue en un panel web con geolocalización e indicadores en tiempo real.
+      </li>
+      <li><b>Despliegue e instalación en campo:</b> Se acopló el sistema a un esquema de alimentación fotovoltaica
+        autónomo y se instaló en el punto de captación hídrica en el Centro Lope para pruebas operativas continuas.</li>
+    </ul>
+  </div>
+
+  <!-- ================= SECCIÓN DE IMÁGENES / GALERÍA ================= -->
+  <div class="project-gallery">
+    <figure class="gallery-item">
+      <img src="media/sennova2024/dis_montaje_color.jpg" alt="Diseño del sistema autonomo solar" loading="lazy">
+      <figcaption>Diseño del sistema autonomo solar.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2024/dis_sistema.jpg" alt="Diseño del sistema autonomo solar" loading="lazy">
+      <figcaption>Diseño del sistema autonomo solar.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2024/dis_comunicacion.png" alt="Diseño en bloques comunicación y transferencia de datos"
+        loading="lazy">
+      <figcaption>Diseño en bloques comunicación y transferencia de datos.</figcaption>
+    </figure>
+  </div>
+  <!-- =================================================================== -->
+
+
+  <div class="project-main">
+    <h3>Resultados</h3>
+    <ul>
+      <li><b>Respuesta espectral y respuesta a diluciones:</b> Las pruebas espectrofotométricas preliminares confirmaron
+        la sensibilidad del sensor ante variaciones en la concentración de las soluciones (canal azul), identificando
+        patrones claros de respuesta según el nivel de dilución de la muestra.</li>
+      <li><b>Curva de calibración y linealidad:</b> Se obtuvo la curva característica del sensor mediante la correlación
+        de lecturas de radiancia/absorbancia respecto a concentraciones estándar (UPC), alcanzando una alta linealidad
+        que valida la precisión del prototipo frente a equipos de laboratorio.</li>
+      <li><b>Despliegue funcional en entorno real:</b> Se logró la operación 100% autónoma del prototipo alimentado por
+        energía solar en la fuente hídrica del Centro Lope, transmitiendo de manera constante los datos de calidad del
+        agua a la interfaz web para el monitoreo remoto.</li>
+    </ul>
+  </div>
+
+  <!-- ================= SECCIÓN DE IMÁGENES / GALERÍA ================= -->
+  <div class="project-gallery">
+    <figure class="gallery-item">
+      <img src="media/sennova2024/res_curva_sensor.png" alt="Curva característica del sensor de color" loading="lazy">
+      <figcaption>Curva característica del sensor de color.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2024/res_calibracion_valoresPromedio.png" alt="Calibración sensor de color en UPC"
+        loading="lazy">
+      <figcaption>Calibración sensor de color en UPC.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2024/res_prototipo_campo.png"
+        alt="Prototipo autónomo con alimentación solar instalado en campo" loading="lazy">
+      <figcaption>Prototipo autónomo con alimentación solar instalado en campo.</figcaption>
+    </figure>
+  </div>
+  <!-- =================================================================== -->
+
+
+  <div class="project-grid">
+    <div class="project-main">
+      <h3>Mi rol</h3>
+      <ul>
+        <li>Formulé y lideré técnicamente el proyecto, como investigador experto responsable ante SENNOVA desde la
+          propuesta inicial hasta el cierre.</li>
+        <li>Diseñé la arquitectura del sistema y programé la lógica de adquisición y control en el microcontrolador.
+        </li>
+        <li>Coordiné con el equipo de investigación las pruebas de campo y la validación de resultados.</li>
+        <li>Documenté los resultados técnicos y participé en su divulgación ante SENNOVA.</li>
+      </ul>
+    </div>
+
+    <aside class="project-aside">
+      <h3>Tecnologías</h3>
+      <ul class="tag-list">
+        <li><span class="dot"></span>Sensores e Instrumentación: ESP32 - 4G-LTE / Sensor de Color y Turbiedad /
+          Temperatura DS18B20.</li>
+        <li><span class="dot"></span>Internet de las Cosas (IoT): ThingSpeak / HTTP / Wi-Fi / Raspberry Pi / Monitoreo
+          remoto.</li>
+        <li><span class="dot"></span>Energía y Hardware: Paneles fotovoltaicos / Control de carga / Baterías de litio /
+          Diseño e impresión 3D (Autodesk Fusion360).</li>
+        <li><span class="dot"></span>Procesamiento y Análisis: Calibración experimental / Procesamiento de datos /
+          Visualización en tiempo real / Validación en campo.</li>
+      </ul>
+
+    </aside>
+
+  </div>
+</article>

@@ -1,0 +1,133 @@
+<article class="project">
+  <p class="eyebrow"><span class="dot"></span>PROYECTO SGPS-12116-2024</p>
+  <h2>Sistema de visión artificial para la detección de <em>Ascochyta spp.</em> en cultivos de arveja</h2>
+  <div class="meta-row">
+    <span>SENA Centro Lope · Pasto, Nariño</span>
+    <span class="sep">·</span>
+    <span>Abril – Diciembre 2023</span>
+    <span class="status-badge">Prototipo probado en campo</span>
+  </div>
+
+  <p class="project-lead">
+    Diseño de una solución basada en visión artificial e inteligencia artificial para el
+    diagnóstico temprano de enfermedades fitosanitarias en cultivos de arveja.
+  </p>
+
+  <p class="project-lead">
+    <b>Resumen:</b>En el departamento de Nariño, los cultivos de arveja sufren pérdidas económicas y ambientales por 
+    enfermedades foliares causadas por Ascochyta spp. (A. pisi, A. pinodes y A. pinodella), cuyo manejo actual abusa 
+    de agroquímicos. Como aporte a la Agricultura 4.0, el Centro LOPE desarrollará un sistema inteligente de visión 
+    artificial para evaluar y analizar automáticamente las lesiones foliares. La metodología contempla cinco fases: 
+    caracterización del problema y selección de herramientas (OpenCV, Python, C/C++), diseño de la arquitectura de 
+    red neuronal, construcción del módulo de análisis visual, pruebas de campo/validación y socialización de resultados. 
+    Este proyecto fortalece la capacidad tecnológica del centro y ofrece una herramienta objetiva para el diagnóstico 
+    fitopatológico y la mejora de la productividad agrícola.<br><br>
+
+    <b>Palabras clave:</b> Visión artificial, Python, TensorFlow, Arveja, Ascochyta spp. <br><br>
+
+    <b>Objetivo General:</b>
+    Desarrollar un sistema usando visión artificial para identificar lesiones causadas por <em>Ascochyta spp</em>, en 
+    arveja del CIPL Lope.
+  </p>
+
+  <div class="project-main">
+    <h3>Procedimiento Experimental</h3>
+    <ul>
+      <li><b>Establecimiento de unidades experimentales e inoculación:</b> Preparación de dos lotes de cultivo de arveja 
+        (Obonuco San Isidro) —control y de afectación— con inoculación controlada del hongo Ascochyta spp. mediante 
+        aislamiento en laboratorio, pruebas de patogenicidad y aplicación mecánica en planta.</li>
+      <li><b>Adquisición de imágenes:</b> Ante la ausencia de un banco de imágenes previo de cultivos de arveja en el departamento 
+        de Nariño, se realizó la captura directa en campo mediante dispositivos móviles, consolidando la base de datos primaria 
+        necesaria para el entrenamiento inicial de los modelos de visión.</li>
+      <li><b>Preprocesamiento y estandarización del dataset:</b> Reducción de las imágenes a una dimensión de 200×200 píxeles
+        luego 220x220px - MobileNetV2, segmentación/eliminación del fondo mediante la librería rembg y estructuración en conjuntos 
+        de entrenamiento, prueba y validación.</li>
+      <li><b>Entrenamiento del modelo de Inteligencia Artificial:</b> Definición e implementación de una red neuronal profunda secuencial 
+        utilizando la librería Keras/TensorFlow, aplicando técnicas de aplanado (Flatten), capas densas (Dense), desactivación de 
+        neuronas (Dropout) para evitar sobreajuste y función de salida Softmax para clasificación multiclase.</li>
+    </ul>
+  </div>
+
+  <!-- ================= SECCIÓN DE IMÁGENES / GALERÍA ================= -->
+  <div class="project-gallery">
+    <figure class="gallery-item">
+      <img src="media/sennova2023/dis_campo.png" alt="Establecimiento de unidades experimentales y area de cultivo" loading="lazy">
+      <figcaption>Establecimiento de unidades experimentales y area de cultivo.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2023/dis_sistema_captura.png" alt="Diseño del sistema de captura de imagenes (ESP32-cam)" loading="lazy">
+      <figcaption>Diseño del sistema de captura de imagenes (ESP32-cam).</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2023/dis_procedimiento.png" alt="Procedimiento de la adquisicion, análisis y respuesta de las imagenes"
+        loading="lazy">
+      <figcaption>Diseño en bloques comunicación y transferencia de datos.</figcaption>
+    </figure>
+  </div>
+  <!-- =================================================================== -->
+
+
+  <div class="project-main">
+    <h3>Resultados</h3>
+    <ul>
+      <li><b>Construcción e integración del hardware de campo:</b> Diseño en 3D e impresión de carcasas protectoras para los 
+        dispositivos de captura, integrados con subsistemas solares independientes para garantizar la autonomía energética 
+        en sitio.</li>
+      <li><b>Clasificación automatizada del estado foliar:</b> Categorización efectiva de las imágenes analizadas en tres clases 
+        operativas: Enfermas, Sanas u Otros.</li>
+      <li><b>Despliegue del aplicativo web en la nube:</b> Puesta en marcha de una plataforma web accesible vía servidor VPS que 
+        permite a los usuarios evaluar imágenes de forma automática o manual en tiempo real y visualizar la galería histórica de 
+        captura.</li>
+    </ul>
+  </div>
+
+  <!-- ================= SECCIÓN DE IMÁGENES / GALERÍA ================= -->
+  <div class="project-gallery single-column">
+    <figure class="gallery-item">
+      <img src="media/sennova2023/res_1_modelo.png" alt="Modelo seleccionado para inferencia del sistema de vision artificial" loading="lazy">
+      <figcaption>Modelo seleccionado para inferencia del sistema de vision artificial.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2023/res_2_metricas.png" alt="Métricas de diferentes modelos evaluados" loading="lazy">
+      <figcaption>Métricas de diferentes modelos evaluados.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2023/res_3_plataforma.png"
+        alt="Despliegue y funcionamiento de la Plataforma Web" loading="lazy">
+      <figcaption>Despliegue y funcionamiento de la Plataforma Web.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2023/res_4_implementacion.png"
+        alt="Sistema desplegado en campo y adquisición de imagenes" loading="lazy">
+      <figcaption>Sistema desplegado en campo y adquisición de imagenes.</figcaption>
+    </figure>
+  </div>
+  <!-- =================================================================== -->
+
+
+  <div class="project-grid">
+    <div class="project-main">
+      <h3>Mi rol</h3>
+      <ul>
+        <li>Lideré la ingeniería y formulación técnica del proyecto ante SENNOVA, responsabilizándome del diseño global del sistema y del cumplimiento de los entregables tecnológicos.</li>
+        <li>Diseñé e integré la arquitectura de hardware del nodo de adquisición en campo, considerando el dimensionamiento del sistema de alimentación fotovoltaico, la gestión de energía y la conectividad inalámbrica (GSM/Wi-Fi).</li>
+        <li>Desarrollé el firmware para el procesamiento y transmisión de datos en borde (edge computing), así como la integración de los algoritmos de analítica de imágenes y visión artificial sobre la infraestructura del proyecto.</li>
+        <li>Desplegué la arquitectura backend/frontend en un servidor VPS, asegurando la interoperabilidad entre los dispositivos IoT de campo, la base de datos y la interfaz gráfica de usuario.</li>
+        <li>Dirigí las pruebas de campo para la validación del sistema en entorno real, además de documentar los componentes de ingeniería y participar en la divulgación técnica del proyecto.</li>
+      </ul>
+    </div>
+
+    <aside class="project-aside">
+      <h3>Tecnologías</h3>
+      <ul class="tag-list">
+        <li><span class="dot"></span>Lenguajes y Entornos: Python / C++ (Arduino IDE) / Jupyter Notebook</li>
+        <li><span class="dot"></span>Inteligencia Artificial y Visión: TensorFlow / Keras / OpenCV / NumPy / Pandas</li>
+        <li><span class="dot"></span>Hardware e IoT: ESP32-CAM / Módulos GSM/Wi-Fi / Impresión 3D (Autodesk Fusion360)</li>
+        <li><span class="dot"></span>Energía y Servidores: Paneles fotovoltaicos / Baterías de litio / VPS (SSH/PuTTY)</li>
+        <li><span class="dot"></span>Lenguajes y Entornos: Python / C++ (Arduino IDE) / MATLAB / Jupyter Notebook</li>
+      </ul>
+
+    </aside>
+
+  </div>
+</article>

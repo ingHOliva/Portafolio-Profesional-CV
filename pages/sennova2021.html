@@ -1,0 +1,160 @@
+<article class="project">
+  <p class="eyebrow"><span class="dot"></span>PROYECTO SGPS-8211-2021</p>
+  <h2>Seguimiento a la cadena de frío en leche mediante el monitoreo de variables ambientales</h2>
+  <div class="meta-row">
+    <span>SENA Centro Sur Colombiano de Logística Internacional · Ipiales, Nariño</span>
+    <span class="sep">·</span>
+    <span>Enero – Diciembre 2021</span>
+    <span class="status-badge">Prototipo probado en campo</span>
+  </div>
+
+  <p class="project-lead">
+    Desarrollo de una solución basada en Internet de las Cosas (IoT) y monitoreo geoespacial en tiempo real para reducir
+    riesgos de
+    pérdida de leche cruda durante su transporte.
+  </p>
+
+  <p class="project-lead">
+    <b>Resumen:</b> La producción de leche aporta el 27% del PIB agropecuario del departamento de Nariño. Al ser un
+    producto altamente perecedero, debe mantenerse refrigerado a 4 °C para prevenir la proliferación bacteriana y la
+    consecuente caída en los niveles de pH. En este proyecto se diseñó e implementó un prototipo portable e independiente para el
+    seguimiento geoespacial y físico-químico del transporte lácteo en la región. La metodología contempló la integración de sensores
+    de temperatura, humedad, presión atmosférica y pH a un microcontrolador ATSAMD21 con conectividad GSM/GPS (Maduino Zero
+    A9G), un sistema de alimentación fotovoltaico autónomo, carcasas impresas en 3D en resina y el despliegue de la plataforma ThingsBoard
+    en un servidor VPS con tecnología de contenedores Docker para la visualización en tiempo real y análisis del histórico de rutas.<br><br>
+
+    <b>Palabras clave:</b> Internet de las Cosas (IoT), Cadena de frío, Leche cruda, ThingsBoard, Maduino Zero A9G,
+    Monitoreo geoespacial, Impresión 3D. <br><br>
+
+    <b>Objetivo General:</b>
+    Desarrollar un prototipo tecnológico para el seguimiento a la cadena de frío en leche mediante el monitoreo de
+    variables ambientales.
+  </p>
+
+  <div class="project-main">
+    <h3>Procedimiento Experimental</h3>
+    <ul>
+      <li><b>Caracterización y selección de componentes electrónicos:</b> Selección e integración de sensores de
+        temperatura y humedad (AM2302/DHT22), presión atmosférica (BMP180) y pH (sensor analógico DFRobot).
+        Selección del dispositivo Maduino Zero A9G basado en el microcontrolador de 32 bits ATSAMD21G18 con módulo
+        celular GPRS/GSM y receptor GPS integrado.</li>
+      <li><b>Desarrollo de firmware y protocolo de comunicación:</b> Programación en C++ (entorno Arduino IDE) para el
+        muestreo de datos analógicos e I2C, lectura de coordenadas GPS y estructuración de paquetes de telemetría en
+        formato JSON enviadas mediante comandos AT sobre la red celular.</li>
+      <li><b>Diseño de carcasa y manufactura aditiva 3D:</b> Modelado tridimensional de gabinetes compactos en Fusion
+        360, optimización de soportes mediante Lychee Slicer y Photon Workshop, y fabricación por impresión 3D en resina
+        fotopolímera con el equipo Anycubic Mono X.</li>
+      <li><b>Diseño del subsistema de energía fotovoltaica:</b> Integración de paneles solares fotovoltaicos,
+        acumuladores de ion-litio 18650 y gestores de carga (Solar Power Manager 5V) para garantizar el funcionamiento
+        ininterrumpido en campo.</li>
+      <li><b>Despliegue de infraestructura en la nube y plataforma IoT:</b> Configuración de un servidor privado virtual
+        (VPS) bajo Linux Ubuntu, despliegue de contenedores Docker e instalación/configuración de la plataforma
+        ThingsBoard para la gestión de dispositivos, ingesta de datos y creación del cuadro de mando interactivo.</li>
+    </ul>
+  </div>
+
+  <!-- ================= SECCIÓN DE IMÁGENES / GALERÍA ================= -->
+  <div class="project-gallery single-column">
+    <figure class="gallery-item">
+      <img src="media/sennova2021/dis_1_esquema_sistema.png"
+        alt="Diseño e integración de los componentes del dispositivo electrónico" loading="lazy">
+      <figcaption>Diseño e integración de los componentes del dispositivo electrónico.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2021/dis_2_comunicacion_serial.png"
+        alt="Modelado, optimización e impresión 3D en resina de la carcasa del prototipo" loading="lazy">
+      <figcaption>Modelado, optimización e impresión 3D en resina de la carcasa del prototipo.</figcaption>
+    </figure>
+  </div>
+
+  <div class="project-gallery">
+    <figure class="gallery-item">
+      <img src="media/sennova2021/dis_3_configuracion_server.png"
+        alt="Diseño e integración de los componentes del dispositivo electrónico" loading="lazy">
+      <figcaption>Diseño e integración de los componentes del dispositivo electrónico.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2021/dis_4_configuracion_thingsboard.png"
+        alt="Modelado, optimización e impresión 3D en resina de la carcasa del prototipo" loading="lazy">
+      <figcaption>Modelado, optimización e impresión 3D en resina de la carcasa del prototipo.</figcaption>
+    </figure>
+  </div>
+  <!-- =================================================================== -->
+
+  <div class="project-main">
+    <h3>Resultados</h3>
+    <ul>
+      <li><b>Prototipo embebido portátil y autónomo:</b> Ensamble funcional y prueba de autonomía energética del
+        dispositivo portable, capaz de adquirir y procesar variables físico-químicas de la leche y del entorno.
+      </li>
+      <li><b>Plataforma web de monitoreo geoespacial:</b> Despliegue del dashboard interactivo en ThingsBoard sobre un
+        servidor VPS, permitiendo la visualización gráfica de variables ambientales y el rastreo geográfico sobre mapa
+        en tiempo real.</li>
+      <li><b>Pruebas de ruta y caracterización de cobertura regional:</b> Evaluación del prototipo en la ruta láctea
+        Pasto - Túquerres - Guachucal - Ipiales - Pasto, permitiendo identificar zonas de interrupción de señal celular
+        de los operadores móviles y correlacionar variaciones térmicas con alteraciones del pH.</li>
+    </ul>
+  </div>
+
+  <!-- ================= SECCIÓN DE IMÁGENES / GALERÍA ================= -->
+  <div class="project-gallery">
+    <figure class="gallery-item">
+      <img src="media/sennova2021/res_1_prototipo.png" alt="Dispositivo electrónico prototipo funcional ensamblado"
+        loading="lazy">
+      <figcaption>Dispositivo electrónico prototipo funcional ensamblado.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2021/res_3_recorrido.png"
+        alt="Mapa ideal del recorrido" loading="lazy">
+      <figcaption>Mapa ideal del recorrido.</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="media/sennova2021/res_4_recorrido.png"
+        alt="Mapa real del recorrido" loading="lazy">
+      <figcaption>Mapa real del recorrido.</figcaption>
+    </figure>
+  </div>
+
+  <div class="project-gallery single-column">
+    <figure class="gallery-item">
+      <img src="media/sennova2021/res_5_plataforma.png" alt="Dispositivo electrónico prototipo funcional ensamblado"
+        loading="lazy">
+      <figcaption>Despliegue de la plataforma Thigsboard y Visualización de resultados.</figcaption>
+    </figure>
+  </div>
+  <!-- =================================================================== -->
+
+  <div class="project-grid">
+    <div class="project-main">
+      <h3>Mi rol</h3>
+      <ul>
+        <li>Lideré el diseño técnico, la ingeniería de hardware y el desarrollo de software del proyecto como
+          Investigador Principal de SENNOVA.</li>
+        <li>Diseñé la arquitectura electrónica, seleccionando e integrando el microcontrolador ATSAMD21, módulo A9G,
+          acumuladores de energía y sensores ambientales/pH.</li>
+        <li>Desarrollé el firmware en C++ para la adquisición de señales, geolocalización GPS y transmisión de paquetes
+          JSON mediante comandos AT en la red celular.</li>
+        <li>Diseñé los modelos 3D y gestioné el proceso de manufactura aditiva en resina fotopolímera (Anycubic Mono X)
+          optimizando la generación de soportes.</li>
+        <li>Configuré la infraestructura en la nube en un VPS Linux Ubuntu con Docker y desplegué la plataforma
+          ThingsBoard.</li>
+        <li>Coordiné y ejecuté las pruebas de campo en las rutas de recolección de leche en el departamento de Nariño,
+          analizando la calidad de señal y los datos recopilados.</li>
+      </ul>
+    </div>
+
+    <aside class="project-aside">
+      <h3>Tecnologías</h3>
+      <ul class="tag-list">
+        <li><span class="dot"></span>Lenguajes y Entornos: C++ (Arduino IDE) / Python / Bash (Linux Shell) / JSON</li>
+        <li><span class="dot"></span>Hardware e IoT: Maduino Zero A9G (ATSAMD21G18 + A9G GSM/GPS) / Sensor pH / DHT22 /
+          BMP180 / Protocolo I2C</li>
+        <li><span class="dot"></span>Energía y Manufactura 3D: Paneles solares / Baterías Li-Ion 18650 / Impresión 3D
+          Resina (Anycubic Mono X, Lychee Slicer, Fusion 360)</li>
+        <li><span class="dot"></span>Servidores y Nube: VPS (DigitalOcean / Linux Ubuntu) / Docker / ThingsBoard IoT
+          Platform / Comandos AT</li>
+      </ul>
+    </aside>
+
+  </div>
+</article>
