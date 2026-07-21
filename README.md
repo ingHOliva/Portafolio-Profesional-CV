@@ -28,7 +28,7 @@ Las iniciativas y proyectos documentados en esta plataforma abarcan las siguient
 
 Dentro de la sección de proyectos latentes se abordan las siguientes líneas activas de formulación e investigación aplicada:
 
-1. **Ecosistema Inteligente de Alerta Temprana para Recursos Hídricos (AquaSENA-IA):** Integración de sensores fisicoquímicos, energía fotovoltaica y modelos de aprendizaje automático para la correlación de parámetros en tiempo real con alertas microbiológicas.
+1. **Ecosistema Inteligente de Alerta Temprana para Recursos Hídricos (Aqua-IA):** Integración de sensores fisicoquímicos, energía fotovoltaica y modelos de aprendizaje automático para la correlación de parámetros en tiempo real con alertas microbiológicas.
 2. **Arquitectura Modular para Monitoreo Autónomo de Calidad de Agua:** Investigación doctoral orientada a la autonomía tecnológica en la caracterización continua de fuentes hídricas rurales mediante análisis multimodal.
 3. **Sistemas de Monitoreo In Situ para Salud Ambiental:** Soluciones electrónicas y fluídicas aplicadas a la trazabilidad y captura de información geoespacial para la gestión del territorio.
 
